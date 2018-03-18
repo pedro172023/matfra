@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulario De Contacto</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body>
+		<div class="form">
+			<form action="guardar.php" method="POST">
+				<p>Nombre de la empresa</p>
+				<label for="nombre">Su nombre</label>
+				<input type="text" name="nombre" placeholder="Nombre" required>
+				<p>RFC</p>
+				<label for="rfc">Su rfc</label>
+				<input type="text" name="rfc" placeholder="rfc" required>
+				<p>Telefono</p>
+				<label for="telefono">Su telefono</label>
+				<br>
+				<input type="tel" name="telefono" placeholder="telefono" required>
+				<p>Correo</p>
+				<label for="correo">Direccion De Correo</label>
+				<br>
+				<input type="email" name="correo" placeholder="alguien@algo.com" required>
+				<p>Pago</p>
+				<label for="Pago">Pago</label>
+				<br>
+				<input type="radio" name="Pago" value="1" required>
+				<p>Vigencia</p>
+				<label for="Vigencia">Vigencia</label>
+				<br>
+				<input type="date" name="Vigencia"  required>
+				<p>Producto de Patrocinio</p>
+				<label for="producto">Producto</label>
+				<br>
+				<input type="text" name="producto"  required>
+				<p>Nivel</p>
+				<label for="nivel">Nivel</label>
+				<br>
+				<select name="nivel">
+                <option value="1">Nivel 1</option>
+                <option value="2">Nivel 2</option>
+                <option value="3">Nivel 3</option>
+                </select>
+				<br>
+				<br>
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+	</body>
+</html>

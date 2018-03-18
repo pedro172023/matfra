@@ -1,0 +1,1739 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+font-family: 'Walkway Bold';
+src: url('../font/Walkway.ttf');
+}
+
+body {
+    background: rgba(73, 155, 234, 0.43);
+    background: -moz-linear-gradient(left, rgba(73, 155, 234, 0.43) 0%, rgba(32, 124, 229, 0.44) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73, 155, 234, 0.43)), color-stop(100%, rgba(32, 124, 229, 0.44)));
+    background: -webkit-linear-gradient(left, rgba(73, 155, 234, 0.43) 0%, rgba(32, 124, 229, 0.44) 100%);
+    background: -o-linear-gradient(left, rgba(73, 155, 234, 0.43) 0%, rgba(32, 124, 229, 0.44) 100%);
+    background: -ms-linear-gradient(left, rgba(73, 155, 234, 0.43) 0%, rgba(32, 124, 229, 0.44) 100%);
+    background: linear-gradient(to right, rgba(73, 155, 234, 0.43) 0%, rgba(32, 124, 229, 0.44) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1);
+}
+
+section {
+    padding: 20px;
+}
+
+.menu_bar {
+    display: none;
+}
+
+header {
+    width: 100%;
+}
+
+header nav {
+    background: #023859;
+    z-index: 1000;
+    max-width: 1000px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    /*La razon por la que no usamos floar en vez de inline-block es
+  porque no vamos a poder usar overflows en el header nav ul*/
+    position: relative;
+}
+
+header nav ul li:hover .children {
+    display: block;
+}
+
+
+/*Submenu*/
+
+header nav ul li .children {
+    background: #011826;
+    position: absolute;
+    display: none;
+    width: 150%;
+    z-index: 1000;
+}
+
+header nav ul li .children li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    /*Usamos overflow hidden porque aqui si vamos a necesitar usar float*/
+}
+
+header nav ul li .children li a {
+    display: block;
+}
+
+header nav ul .children li a span {
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+header nav ul li:hover {
+    background: #E6344A;
+}
+
+header nav ul li span {
+    margin-right: 10px;
+}
+
+header nav ul li .caret {
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+#content {
+    width: 80%;
+    margin: 60px 10%;
+    text-align: center;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fc5e00;
+    font-family: 'Walkway Bold';
+}
+
+iframe {
+    width: 80%;
+    height: 550px;
+}
+
+
+/*estilos de animasles en web*/
+
+.teuno {
+    font-family: 'Walkway Bold';
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 2;
+    left: 1000px;
+    top: 150px;
+    display: block;
+}
+
+.tedos {
+    font-family: 'Walkway Bold';
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 2;
+    left: 1000px;
+    top: 400px;
+    display: block;
+}
+
+.dr11 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+    left: 800px;
+    top: 100px;
+    display: block;
+}
+
+.dr22 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+    left: 800px;
+    top: 300px;
+    display: block;
+}
+
+.dr1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    left: 800px;
+    top: 130px;
+    display: block;
+}
+
+.dr2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    left: 1100px;
+    top: 130px;
+    display: block;
+}
+
+.dr3 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    left: 800px;
+    top: 400px;
+    display: block;
+}
+
+.dr4 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    left: 1100px;
+    top: 400px;
+    display: block;
+}
+
+.te11 {
+    font-family: 'Walkway Bold';
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 2;
+    left: 800px;
+    top: 300px;
+    display: block;
+}
+
+.te22 {
+    font-family: 'Walkway Bold';
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 2;
+    left: 1100px;
+    top: 300px;
+    display: block;
+}
+
+.te3 {
+    font-family: 'Walkway Bold';
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 2;
+    left: 800px;
+    top: 550px;
+    display: block;
+}
+
+.te4 {
+    font-family: 'Walkway Bold';
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 2;
+    left: 1100px;
+    top: 550px;
+    display: block;
+}
+
+.tex1 {
+    font-family: 'Walkway Bold';
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 2;
+    left: 910px;
+    top: 120px;
+    display: block;
+}
+
+.tex2 {
+    font-family: 'Walkway Bold';
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 2;
+    left: 600px;
+    top: 330px;
+    display: block;
+}
+
+.tex3 {
+    font-family: 'Walkway Bold';
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 2;
+    left: 910px;
+    top: 490px;
+    display: block;
+}
+
+.dro1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+    left: 700px;
+    top: 100px;
+    display: block;
+}
+
+.dro2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: block;
+    z-index: 2;
+    left: 950px;
+    top: 250px;
+}
+
+.dro3 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: block;
+    z-index: 2;
+    left: 700px;
+    top: 400px;
+}
+
+#drag1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    left: 10px;
+    top: 50px;
+    display: block;
+}
+
+#drag2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    left: 10px;
+    top: 250px;
+    display: block;
+}
+
+#drag3 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    left: 250px;
+    top: 50px;
+    display: block;
+}
+
+#drag4 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    left: 250px;
+    top: 250px;
+    display: block;
+}
+
+#drag5 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    left: 10px;
+    top: 450px;
+    display: block;
+}
+
+#drag6 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    left: 250px;
+    top: 450px;
+    display: block;
+}
+
+.drop {
+    margin: 0 auto;
+    left: 700px;
+    top: 50px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.drop2 {
+    margin: 0 auto;
+    left: 700px;
+    top: 300px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.text1 {
+    font-family: 'Walkway Bold';
+    font-size: 30px;
+    top: 150px;
+    left: 910px;
+    position: absolute;
+}
+
+.text3 {
+    font-family: 'Walkway Bold';
+    font-size: 30px;
+    top: 410px;
+    left: 910px;
+    position: absolute;
+}
+
+.te1 {
+    font-family: 'Walkway Bold';
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 2;
+    left: 910px;
+    top: 150px;
+    display: block;
+}
+
+.te2 {
+    font-family: 'Walkway Bold';
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 2;
+    left: 910px;
+    top: 410px;
+    display: block;
+}
+
+.teone {
+    font-family: 'Walkway Bold';
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 2;
+    left: 1000px;
+    top: 150px;
+    display: block;
+}
+
+.tetwo {
+    font-family: 'Walkway Bold';
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 2;
+    left: 1010px;
+    top: 410px;
+    display: block;
+}
+
+.image {
+    top: 270px;
+    left: 400px;
+    position: absolute;
+}
+
+
+/*estilos para fracciones propias e impropias y equivalentes*/
+
+.numerador {
+    background-color: #6ac7ff;
+    color: #fff;
+    position: relative;
+    top: 10px;
+    left: 260px;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+}
+
+.raya {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    top: 30px;
+    left: 260px;
+    z-index: 1;
+    width: 200px;
+    height: 10px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.denominador {
+    background-color: #6ac7ff;
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 260px;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+}
+
+.resultado {
+    background-color: #6ac7ff;
+    color: #fff;
+    position: absolute;
+    font-family: 'Walkway Bold';
+    font-size: 10em;
+    top: 80px;
+    left: 600px;
+    width: 300px;
+    height: 300px;
+    line-height: 200px;
+}
+
+.c1 {
+    background-color: #6ac7ff;
+    color: #fff;
+    position: absolute;
+    font-family: 'Walkway Bold';
+    font-size: 10em;
+    top: 0px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    line-height: 200px;
+}
+
+.c2 {
+    background-color: #6ac7ff;
+    color: #fff;
+    position: absolute;
+    font-family: 'Walkway Bold';
+    font-size: 10em;
+    top: 110px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    line-height: 200px;
+}
+
+.c3 {
+    background-color: #6ac7ff;
+    color: #fff;
+    position: absolute;
+    font-family: 'Walkway Bold';
+    font-size: 10em;
+    top: 220px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    line-height: 200px;
+}
+
+.c4 {
+    background-color: #6ac7ff;
+    color: #fff;
+    position: absolute;
+    font-family: 'Walkway Bold';
+    font-size: 10em;
+    top: 330px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    line-height: 200px;
+}
+
+.c5 {
+    background-color: #6ac7ff;
+    color: #fff;
+    position: absolute;
+    font-family: 'Walkway Bold';
+    font-size: 10em;
+    top: 440px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    line-height: 200px;
+}
+
+.texto {
+    font-family: 'Walkway Bold';
+    font-size: 3em;
+    top: 410px;
+    left: 600px;
+    position: absolute;
+}
+
+.texto1 {
+    font-family: 'Walkway Bold';
+    font-size: 3em;
+    top: 500px;
+    left: 500px;
+    position: absolute;
+}
+
+.textoagua {
+    font-family: 'Walkway Bold';
+    font-size: 3em;
+    top: 500px;
+    left: 500px;
+    position: absolute;
+}
+
+.textobosque {
+    font-family: 'Walkway Bold';
+    font-size: 30px;
+    top: 500px;
+    left: 800px;
+    position: absolute;
+}
+
+.texto2 {
+    font-family: 'Walkway Bold';
+    font-size: 1em;
+    top: 410px;
+    left: 600px;
+    position: absolute;
+}
+
+.texto3 {
+    font-family: 'Walkway Bold';
+    font-size: 3em;
+    top: 410px;
+    left: 500px;
+    position: absolute;
+}
+
+.textosea {
+    font-family: 'Walkway Bold';
+    font-size: 30px;
+    top: 250px;
+    left: 800px;
+    position: absolute;
+}
+
+.dropabosque {
+    position: absolute;
+    margin: 0 auto;
+    height: 150px;
+    width: 180px;
+    left: 800px;
+    top: 80px;
+}
+
+.dropasea {
+    position: absolute;
+    margin: 0 auto;
+    height: 150px;
+    width: 180px;
+    left: 800px;
+    top: 320px;
+}
+
+.myButton {
+    border: none;
+    background: #3a7999;
+    color: #f2f2f2;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    position: absolute;
+    top: 480px;
+    left: 260px;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+}
+
+.uno {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.dos {
+    position: absolute;
+    left: 40px;
+    top: 140px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.tres {
+    position: absolute;
+    left: 40px;
+    top: 240px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.cuatro {
+    position: absolute;
+    left: 40px;
+    top: 340px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.cinco {
+    position: absolute;
+    left: 40px;
+    top: 440px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.seis {
+    position: absolute;
+    left: 140px;
+    top: 40px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.siete {
+    position: absolute;
+    left: 140px;
+    top: 140px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.ocho {
+    position: absolute;
+    left: 140px;
+    top: 240px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.nueve {
+    position: absolute;
+    left: 140px;
+    top: 340px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.diez {
+    position: absolute;
+    left: 140px;
+    top: 440px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+
+/*************/
+
+.uno2 {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.dos2 {
+    position: absolute;
+    left: 40px;
+    top: 140px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.tres2 {
+    position: absolute;
+    left: 40px;
+    top: 240px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.cuatro2 {
+    position: absolute;
+    left: 40px;
+    top: 340px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.cinco2 {
+    position: absolute;
+    left: 40px;
+    top: 440px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.seis2 {
+    position: absolute;
+    left: 140px;
+    top: 40px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.siete2 {
+    position: absolute;
+    left: 140px;
+    top: 140px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.ocho2 {
+    position: absolute;
+    left: 140px;
+    top: 240px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.nueve2 {
+    position: absolute;
+    left: 140px;
+    top: 340px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.diez2 {
+    position: absolute;
+    left: 140px;
+    top: 440px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+
+/************************************************************/
+
+.menu_bar {
+    display: none;
+}
+
+
+/*aki van los estilos de los animales*/
+
+#draga1 {
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+#draga2 {
+    position: absolute;
+    left: 40px;
+    top: 250px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+#draga3 {
+    position: absolute;
+    left: 40px;
+    top: 400px;
+    width: 150px;
+    height: 150px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+#draga4 {
+    position: absolute;
+    left: 190px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+#draga5 {
+    position: absolute;
+    left: 190px;
+    top: 250px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+#draga6 {
+    position: absolute;
+    left: 190px;
+    top: 400px;
+    width: 150px;
+    height: 150px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+#draga7 {
+    position: absolute;
+    left: 340px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+#draga8 {
+    position: absolute;
+    left: 340px;
+    top: 250px;
+    width: 120px;
+    height: 120px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+#draga9 {
+    position: absolute;
+    left: 340px;
+    top: 400px;
+    width: 150px;
+    height: 150px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+#draga10 {
+    position: absolute;
+    left: 490px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+#draga11 {
+    position: absolute;
+    left: 490px;
+    top: 250px;
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+#draga12 {
+    position: absolute;
+    left: 490px;
+    top: 400px;
+    width: 150px;
+    height: 150px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.dropa {
+    position: relative;
+    margin: 0 auto;
+    left: 700px;
+    top: 300px;
+    z-index: 1;
+    width: 300px;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.dropa2 {
+    position: relative;
+    left: 900px;
+    top: 250px;
+    z-index: 1;
+    width: 300px;
+    height: 250px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.dropagua {
+    position: relative;
+    left: 600px;
+    top: 100px;
+    z-index: 1;
+    width: 300px;
+    height: 250px;
+    line-height: 100px;
+    text-align: center;
+}
+
+@media screen and (max-width:800px) {
+    h2 {
+        font-size: 15px;
+    }
+    header nav {
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+        left: -100%;
+        /*top:0px;*/
+        overflow: auto;
+    }
+    .texto1 {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        top: 290px;
+        left: 350px;
+        position: absolute;
+    }
+    .textoagua {
+        font-family: 'Walkway Bold';
+        font-size: 1.6em;
+        top: 210px;
+        left: 270px;
+        position: absolute;
+    }
+    .texto3 {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        top: 180px;
+        left: 350px;
+        position: absolute;
+    }
+    .textobosque {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        top: 290px;
+        left: 350px;
+        position: absolute;
+    }
+    .textosea {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        top: 180px;
+        left: 350px;
+        position: absolute;
+    }
+    .texto2 {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        top: 410px;
+        left: 390px;
+        position: absolute;
+    }
+    .menu_bar {
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+        font-weight: bold;
+        background: #000;
+        font-style: italic;
+        font-size: 2em;
+        font-family: 'Walkway Bold';
+        text-decoration: none;
+        color: #fff;
+    }
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+    .drop {
+        margin: 0 auto;
+        left: 150px;
+        top: 150px;
+        position: absolute;
+    }
+    .drop2 {
+        margin: 0 auto;
+        left: 0px;
+        top: 200px;
+        position: absolute;
+    }
+    .drop3 {
+        margin: 0 auto;
+        left: 0px;
+        top: 150px;
+    }
+    /*aqui van los de los animales*/
+    .dropa {
+        position: absolute;
+        margin: 0 auto;
+        height: 70px;
+        width: 100px;
+        left: 340px;
+        top: 100px;
+    }
+    .dropa2 {
+        position: absolute;
+        margin: 0 auto;
+        height: 70px;
+        width: 100px;
+        left: 340px;
+        top: 210px;
+    }
+    .dropabosque {
+        position: absolute;
+        margin: 0 auto;
+        height: 50px;
+        width: 80px;
+        left: 340px;
+        top: 100px;
+    }
+    .dropasea {
+        position: absolute;
+        margin: 0 auto;
+        height: 50px;
+        width: 80px;
+        left: 340px;
+        top: 200px;
+    }
+    #draga1 {
+        width: 50px;
+        height: 50px;
+        left: 23px;
+        top: 70px;
+        display: block;
+    }
+    #draga2 {
+        width: 50px;
+        height: 50px;
+        left: 14px;
+        top: 150px;
+        display: block;
+    }
+    #draga3 {
+        width: 50px;
+        height: 50px;
+        left: 23px;
+        top: 220px;
+        display: block;
+    }
+    #draga4 {
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+        left: 95px;
+        top: 70px;
+        display: block;
+    }
+    #draga5 {
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+        left: 99px;
+        top: 150px;
+        display: block;
+    }
+    #draga6 {
+        width: 50px;
+        height: 50px;
+        left: 96px;
+        top: 220px;
+        display: block;
+    }
+    #draga7 {
+        width: 40px;
+        height: 40px;
+        left: 175px;
+        top: 70px;
+        display: block;
+    }
+    #draga8 {
+        width: 60px;
+        height: 60px;
+        left: 162px;
+        top: 150px;
+        display: block;
+    }
+    #draga9 {
+        width: 50px;
+        height: 50px;
+        left: 163px;
+        top: 220px;
+        display: block;
+    }
+    #draga10 {
+        width: 50px;
+        height: 50px;
+        left: 236px;
+        top: 70px;
+        display: block;
+    }
+    #draga11 {
+        width: 40px;
+        height: 40px;
+        z-index: 2;
+        left: 236px;
+        top: 150px;
+        display: block;
+    }
+    .dropagua {
+        left: 280px;
+        top: 50px;
+        z-index: 1;
+        width: 200px;
+        height: 150px;
+    }
+    #draga12 {
+        width: 40px;
+        height: 40px;
+        z-index: 2;
+        left: 230px;
+        top: 226px;
+        display: block;
+    }
+    .uno {
+        position: absolute;
+        left: 10px;
+        top: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .dos {
+        position: absolute;
+        left: 10px;
+        top: 90px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .tres {
+        position: absolute;
+        left: 10px;
+        top: 140px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .cuatro {
+        position: absolute;
+        left: 10px;
+        top: 190px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .cinco {
+        position: absolute;
+        left: 10px;
+        top: 240px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .seis {
+        position: absolute;
+        left: 50px;
+        top: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .siete {
+        position: absolute;
+        left: 50px;
+        top: 90px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .ocho {
+        position: absolute;
+        left: 50px;
+        top: 140px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .nueve {
+        position: absolute;
+        left: 50px;
+        top: 190px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .diez {
+        position: absolute;
+        left: 50px;
+        top: 240px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .numerador {
+        top: 60px;
+        left: 100px;
+        width: 100px;
+        height: 100px;
+        line-height: 50px;
+    }
+    .raya {
+        top: 80px;
+        left: 100px;
+        z-index: 1;
+        width: 100px;
+        height: 10px;
+    }
+    .denominador {
+        top: 100px;
+        left: 100px;
+        width: 100px;
+        height: 100px;
+        line-height: 50px;
+    }
+    .resultado {
+        position: absolute;
+        top: 100px;
+        left: 220px;
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+    }
+    .texto {
+        font-family: 'Walkway Bold';
+        font-size: 2em;
+        top: 340px;
+        left: 50px;
+        position: absolute;
+    }
+    #drag1 {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        z-index: 2;
+        left: 10px;
+        top: 36px;
+        display: block;
+    }
+    #drag2 {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        z-index: 2;
+        left: 5px;
+        top: 95px;
+        display: block;
+    }
+    #drag3 {
+        position: absolute;
+        z-index: 2;
+        left: 7px;
+        top: 155px;
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+    #drag4 {
+        position: absolute;
+        z-index: 2;
+        left: 88px;
+        top: 34px;
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+    #drag5 {
+        position: absolute;
+        left: 40px;
+        top: 240px;
+        width: 60px;
+        height: 60px;
+        z-index: 2;
+        left: 92px;
+        top: 94px;
+        display: block;
+    }
+    #drag6 {
+        position: absolute;
+        left: 40px;
+        top: 290px;
+        width: 60px;
+        height: 60px;
+        z-index: 2;
+        left: 100px;
+        top: 153px;
+        display: block;
+    }
+    .drop {
+        position: absolute;
+        margin: 0 auto;
+        height: 70px;
+        width: 100px;
+        left: 340px;
+        top: 40px;
+    }
+    .drop2 {
+        position: absolute;
+        margin: 0 auto;
+        height: 70px;
+        width: 100px;
+        left: 340px;
+        top: 130px;
+    }
+    .drop3 {
+        position: relative;
+        margin: 0 auto;
+        left: 500px;
+        top: 300px;
+        z-index: 1;
+        width: 150px;
+        height: 150px;
+        line-height: 100px;
+        text-align: center;
+    }
+    .drop4 {
+        position: relative;
+        margin: 0 auto;
+        left: 500px;
+        top: 200px;
+        z-index: 1;
+        width: 150px;
+        height: 150px;
+        line-height: 100px;
+        text-align: center;
+    }
+    .text1 {
+        font-family: 'Walkway Bold';
+        font-size: 25px;
+        top: 60px;
+        left: 200px;
+        position: absolute;
+    }
+    .text3 {
+        font-family: 'Walkway Bold';
+        font-size: 25px;
+        top: 150px;
+        left: 200px;
+        position: absolute;
+    }
+    .image {
+        top: 100px;
+        left: 170px;
+        position: absolute;
+        z-index: 2;
+    }
+    .dro1 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+        left: 250px;
+        top: 40px;
+        display: block;
+    }
+    .dro2 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        display: block;
+        z-index: 2;
+        left: 369px;
+        top: 120px;
+    }
+    .dro3 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        display: block;
+        z-index: 2;
+        left: 250px;
+        top: 200px;
+    }
+    .tex1 {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        left: 360px;
+        top: 80px;
+        display: block;
+    }
+    .tex2 {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        left: 230px;
+        top: 160px;
+        display: block;
+    }
+    .tex3 {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        left: 360px;
+        top: 251px;
+        display: block;
+    }
+    .dr1 {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        z-index: 2;
+        left: 320px;
+        top: 60px;
+        display: block;
+    }
+    .dr2 {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        z-index: 2;
+        left: 320px;
+        top: 190px;
+        display: block;
+    }
+    .dr11 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+        left: 360px;
+        top: 50px;
+        display: block;
+    }
+    .dr22 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+        left: 360px;
+        top: 150px;
+        display: block;
+    }
+    .dr3 {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        z-index: 2;
+        left: 430px;
+        top: 60px;
+        display: block;
+    }
+    .dr4 {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        z-index: 2;
+        left: 430px;
+        top: 190px;
+        display: block;
+    }
+    .te1 {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        left: 274px;
+        top: 120px;
+        display: block;
+    }
+    .te2 {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        left: 273px;
+        top: 230px;
+        display: block;
+    }
+    .teone {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        left: 274px;
+        top: 130px;
+        display: block;
+    }
+    .tetwo {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        left: 273px;
+        top: 250px;
+        display: block;
+    }
+    .teuno {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        left: 274px;
+        top: 130px;
+        display: block;
+    }
+    .tedos {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        left: 273px;
+        top: 250px;
+        display: block;
+    }
+    .te11 {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        left: 290px;
+        top: 150px;
+        display: block;
+    }
+    .te22 {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        left: 290px;
+        top: 270px;
+        display: block;
+    }
+    .te3 {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        left: 410px;
+        top: 150px;
+        display: block;
+    }
+    .te4 {
+        font-family: 'Walkway Bold';
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        left: 410px;
+        top: 270px;
+        display: block;
+    }
+    header nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+}

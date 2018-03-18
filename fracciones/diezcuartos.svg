@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="25.4mm" height="25.4mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2540 2540"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#373435;stroke-width:20}
+    .fil0 {fill:none}
+    .fil1 {fill:#003399}
+    .fil2 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <ellipse class="fil0 str0" cx="687" cy="662" rx="534" ry="530"/>
+  <line class="fil0 str0" x1="687" y1="133" x2="687" y2= "1192" />
+  <line class="fil0 str0" x1="153" y1="662" x2="1221" y2= "662" />
+  <path class="fil1 str0" d="M153 662l534 0 0 -529c-295,0 -534,237 -534,529z"/>
+  <path class="fil1 str0" d="M687 133l0 529 534 0c0,-292 -239,-529 -534,-529z"/>
+  <path class="fil1 str0" d="M687 662l-534 0c0,293 239,530 534,530l0 -530z"/>
+  <path class="fil1 str0" d="M687 662l0 530c295,0 534,-237 534,-530l-534 0z"/>
+  <ellipse class="fil0 str0" cx="664" cy="1826" rx="534" ry="530"/>
+  <line class="fil0 str0" x1="664" y1="1297" x2="664" y2= "2356" />
+  <line class="fil0 str0" x1="130" y1="1826" x2="1198" y2= "1826" />
+  <path class="fil1 str0" d="M130 1826l534 0 0 -529c-295,0 -534,237 -534,529z"/>
+  <path class="fil1 str0" d="M664 1297l0 529 534 0c0,-292 -239,-529 -534,-529z"/>
+  <path class="fil1 str0" d="M664 1826l-534 0c0,293 239,530 534,530l0 -530z"/>
+  <path class="fil1 str0" d="M664 1826l0 530c295,0 534,-237 534,-530l-534 0z"/>
+  <ellipse class="fil0 str0" cx="1831" cy="1320" rx="534" ry="530"/>
+  <line class="fil0 str0" x1="1831" y1="790" x2="1831" y2= "1850" />
+  <line class="fil0 str0" x1="1297" y1="1320" x2="2365" y2= "1320" />
+  <path class="fil1 str0" d="M1297 1320l534 0 0 -530c-295,0 -534,237 -534,530z"/>
+  <path class="fil1 str0" d="M1831 790l0 530 534 0c0,-293 -239,-530 -534,-530z"/>
+  <path class="fil1 str0" d="M1831 1320l-534 0c0,292 239,530 534,530l0 -530z"/>
+  <path class="fil1 str0" d="M1831 1320l0 530c295,0 534,-238 534,-530l-534 0z"/>
+  <path class="fil2 str0" d="M664 2356l0 -530 -534 0c0,293 239,530 534,530z"/>
+  <path class="fil2 str0" d="M664 1826l0 530c295,0 534,-237 534,-530l-534 0z"/>
+ </g>
+</svg>

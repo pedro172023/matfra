@@ -1,0 +1,1166 @@
+* {
+    padding: 0;
+    margin: 5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Walkway Bold';
+    src: url('../font/Walkway.ttf');
+}
+iframe {
+    width: 100%;
+    height: 550px;
+}
+body {
+    font: bold 30px 'Walkway Bold';
+}
+header,
+nav {
+    display: block;
+}
+/* Definimos un ancho 100% y una altura fija para nuestro menú */
+header {
+    background: rgb(255, 255, 255);
+    height: 100px;
+    position: relative;
+    width: 100%;
+    z-index: 2
+}
+/* El logo sera flotado a la izquierda */
+#logox {
+    display: block;
+    float: left;
+    margin: 6px 10px 0;
+    width: 82px;
+    height: 46px;
+    text-indent: -9999px
+}
+/* Nuestro nav con id #menu lo flotaremos a la derecha*/
+#menux {
+    float: right;
+}
+/* Quitamos estilos por defecto de el tag UL */
+#menux ul {
+    list-style: none;
+    font-size: 20px;
+}
+/* Centramos y ponemos los textos en mayuscula */
+#menux li {
+    display: block;
+    float: left;
+    text-align: center;
+}
+/* Damos estilo a nuestros enlaces */
+#menux li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 26px;
+}
+#menux li a:hover {
+    background: #151a1e;
+    color: #ffc700;
+}
+/* Estilos #nav-mobile y lo ocultamos */
+#nav-mobilex {
+    display: none;
+    background: url(barra.png) no-repeat center center;
+    float: right;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: .6;
+}
+/* Agregaremos esta clase a #nav-mobile, cuando el menu mobile haya sido desplegado */
+#nav-mobile.nav-active {
+    opacity: 1;
+}
+/* Content */
+#content {
+    width: 80%;
+    margin: 60px 10%;
+    text-align: center;
+    overflow: hidden;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fc5e00;
+}
+/*estilos para fracciones propias e impropias y equivalentes*/
+.numerador {
+    background: #cef4e2;
+    background: #cef4e2;
+    position: relative;
+    left: 250px;
+    z-index: 1;
+    width: 200px;
+    height: 150px;
+    line-height: 200px;
+    font-family: arial;
+    font-size: 10px;
+}
+.denominador {/*es el que funciona*/
+    background: #cef4e2;
+    background: #cef4e2;
+    position: relative;
+    top: 10px;
+    left: 250px;
+    z-index: 1;
+    width: 200px;
+    height: 150px;
+    line-height: 200px;
+    font-family: arial;
+    font-size: 15px;
+}
+.numeradoruno {/*es el que funcioona*/
+    background: #cef4e2;
+    background: #cef4e2;
+    position: relative;
+    top: -430px;
+    left: 700px;
+    z-index: 1;
+    width: 200px;
+    height: 150px;
+    line-height: 200px;
+    font-family: arial;
+    font-size: 15px;
+}
+.raya2{/*es la qie funciona*/
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    top: -425px;
+    left: 700px;
+    z-index: 1;
+    width: 200px;
+    height: 10px;
+    line-height: 200px;
+    text-align: center;
+}
+.raya3 {/*es el que funciona*/
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    top: -610px;
+    left: 1140px;
+    display: none;
+    z-index: 1;
+    width: 140px;
+    height: 10px;
+    line-height: 140px;
+    text-align: center;
+}
+.den{
+    
+    /*background: #cef4e2;*/
+    position: absolute;
+    font-family: 'Walkway Bold';
+    font-size: 10em;
+    top: 280px;
+    left: 1150px;
+    /*Aqui muevo el cuadro de resultado*/
+    width: 140px;
+    height: 140px;
+    display: none;
+    line-height: 200px;   
+} 
+.signo{
+    background-image: url(../img/menos.gif);
+    position: relative;
+    top: -200px;
+    left: 500px;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    line-height: 200px;
+    font-family: arial;
+    font-size: 15px;
+}
+.denominadordos {/*es el qque funciona*/
+    background: #cef4e2;
+    background: #cef4e2;
+    position: relative;
+    top: -419px;
+    left: 700px;
+    z-index: 1;
+    width: 200px;
+    height: 150px;
+    line-height: 200px;
+    font-family: arial;
+    font-size: 15px;
+}
+.raya {/*es el que funciona*/
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    top: 5px;
+    left: 250px;
+    z-index: 1;
+    width: 200px;
+    height: 10px;
+    line-height: 200px;
+    text-align: center;
+}
+.resultado {
+    
+    /*background: #cef4e2;*/
+    position: absolute;
+    font-family: 'Walkway Bold';
+    font-size: 10em;
+    top: 115px;
+    left: 1000px;
+    display: none;
+    /*Aqui muevo el cuadro de resultado*/
+    width: 140px;
+    height: 300px;
+    line-height: 200px;
+}
+.num{
+    
+    /*background: #cef4e2;*/
+    position: absolute;
+    font-family: 'Walkway Bold';
+    font-size: 10em;
+    top: 115px;
+    left: 1150px;
+    display: none;
+    /*Aqui muevo el cuadro de resultado*/
+    width: 140px;
+    height: 140px;
+    line-height: 200px;  
+}
+.texto {
+    font-family: 'Walkway Bold';
+    font-size: 3em;
+    top: 430px;
+    left: 1000px;
+    position: absolute;
+    font-size: 30px;
+}
+.uno {
+    position: absolute;
+    left: 40px;
+    top: 90px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.dos {
+    position: absolute;
+    left: 40px;
+    top: 180px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.tres {
+    position: absolute;
+    left: 40px;
+    top: 270px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.cuatro {
+    position: absolute;
+    left: 40px;
+    top: 360px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.cinco {
+    position: absolute;
+    left: 40px;
+    top: 450px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.seis {
+    position: absolute;
+    left: 140px;
+    top: 90px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.siete {
+    position: absolute;
+    left: 140px;
+    top: 180px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.ocho {
+    position: absolute;
+    left: 140px;
+    top: 270px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.nueve {
+    position: absolute;
+    left: 140px;
+    top: 360px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.diez {
+    position: absolute;
+    left: 140px;
+    top: 450px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+/************************************************************/
+.uno2 {
+    position: absolute;
+    left: 40px;
+    top: 90px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.dos2 {
+    position: absolute;
+    left: 40px;
+    top: 180px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.tres2 {
+    position: absolute;
+    left: 40px;
+    top: 270px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.cuatro2 {
+    position: absolute;
+    left: 40px;
+    top: 360px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.cinco2 {
+    position: absolute;
+    left: 40px;
+    top: 450px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.seis2 {
+    position: absolute;
+    left: 140px;
+    top: 90px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.siete2 {
+    position: absolute;
+    left: 140px;
+    top: 180px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.ocho2 {
+    position: absolute;
+    left: 140px;
+    top: 270px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.nueve2 {
+    position: absolute;
+    left: 140px;
+    top: 360px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.diez2 {
+    position: absolute;
+    left: 140px;
+    top: 450px;
+    width: 90px;
+    height: 90px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
+}
+@media screen and (max-width: 680px) {
+    body{
+        font: bold 14px 'Open Sans', sans-serif;
+    }
+    .resultado {
+        //   position: absolute;
+        top: 120px;
+        left: 310px;
+        width: 80px;
+        height: 190px;
+        display: none;
+        //line-height: 150px;
+    }
+    .signo {
+        top: -150px;
+        left: 80px;
+        width: 95px;
+        height: 95px;
+        line-height: 70px;
+    }
+    .texto{
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 1em;
+        top: 312px;
+        left: 125px;
+        position: absolute;
+    }
+    h2{font-size: 15px;}
+    /* mostramos #nav-mobile */
+    #nav-mobilex{ display: block; }
+
+    /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo  */
+    #menux{
+        width: 100%;
+        float: none;
+        padding-top: 60px;
+
+    }
+    /* Convertimos nuestra lista de enlaces en un menú horizontal */
+    #menux ul{
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+        -moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+        box-shadow: 0 1px 2px rgba(0,0,0,.5);
+        max-height: 0;
+        overflow: hidden;
+    }
+    /* estilos para los LI del menu */
+    #menux li{
+        background: #33363b;
+        border-bottom: 1px solid #282b30;
+        float: none;
+    }
+
+    /* Quitamos el borde del ultimo item del menú */
+    #menux li:last-child{ border-bottom: 0;}
+    #menux li a{
+        padding: 15px 0;
+        height: auto;
+        line-height: normal;
+    }
+    #menux li a:hover{background:#2a2d33}
+
+    /* Agregamos una animación al despligue del menú */
+    #menux ul.open-menu{
+        max-height: 400px;
+        -webkit-transition: max-height .4s;
+        -moz-transition: max-height .4s;
+        -ms-transition: max-height .4s;
+        -o-transition: max-height .4s;
+        transition: max-height .4s;
+    }
+
+
+    .uno2 {
+        position: absolute;
+        left: 120px;
+        top: 40px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        z-index: 2;
+    }
+    .dos2 {
+        position: absolute;
+        left: 160px;
+        top: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .tres2 {
+        position: absolute;
+        left: 205px;
+        top: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .cuatro2 {
+        position: absolute;
+        left: 248px;
+        top: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .cinco2 {
+        position: absolute;
+        left: 286px;
+        top: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .seis2 {
+        position: absolute;
+        left: 120px;
+        top: 75px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .siete2 {
+        position: absolute;
+        left: 160px;
+        top: 75px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .ocho2 {
+        position: absolute;
+        left: 205px;
+        top: 75px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .nueve2 {
+        position: absolute;
+        left: 248px;
+        top: 75px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .diez2 {
+        position: absolute;
+        left: 290px;
+        top: 75px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+
+    /*********************************/
+
+
+    .uno {
+        position: absolute;
+        left: 120px;
+        top: 40px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        z-index: 2;
+    }
+    .dos {
+        position: absolute;
+        left: 160px;
+        top: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .tres {
+        position: absolute;
+        left: 205px;
+        top: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .cuatro {
+        position: absolute;
+        left: 248px;
+        top: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .cinco {
+        position: absolute;
+        left: 286px;
+        top: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .seis {
+        position: absolute;
+        left: 120px;
+        top: 75px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .siete {
+        position: absolute;
+        left: 160px;
+        top: 75px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .ocho {
+        position: absolute;
+        left: 205px;
+        top: 75px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .nueve {
+        position: absolute;
+        left: 248px;
+        top: 75px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .diez {
+        position: absolute;
+        left: 290px;
+        top: 75px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    /*****************************======================================================================================**********/
+    .numerador {
+        top: 5px;
+        left: 5px;
+        width: 80px;
+        height: 80px;
+        line-height: 50px
+    }
+    .numeradoruno {
+        top: -275px;
+        left: 180px;
+        width: 80px;
+        height: 77px;
+        line-height: 70px;
+    }
+    .num {
+        top: 121px;
+        left: 405px;
+        width: 82px;
+        height: 83px;
+        line-height: 70px;
+        display: none;
+    }
+    .raya{
+        top: 5px;
+        left: 5px;
+        z-index: 1;
+        width: 80px;
+        height: 8px;
+    }
+    .raya2{
+        top: -276px;
+        left: 180px;
+        z-index: 1;
+        width: 80px;
+        height: 8px;
+    }
+    .raya3{
+        top: -369px;
+        left: 395px;
+        z-index: 1;
+        width: 82px;
+        height: 8px;
+        display: none;
+    }
+    .denominador {
+        top: 7px;
+        left: 5px;
+        width: 80px;
+        height: 80px;
+        line-height: 50px;
+    }
+    .denominadordos {
+        top: -275px;
+        left: 180px;
+        width: 81px;
+        height: 81px;
+        line-height: 70px;
+    }
+    .den {
+        top: 223px;
+        left: 405px;
+        width: 86px;
+        height: 84px;
+        line-height: 60px;
+        display: none;
+    }
+    /////RESULTADO
+
+    /* Signo=======================================*/
+
+
+    iframe{
+        height: 450px;
+        width: 100%;
+    }
+}
+@media (min-width: 681px) and (max-width: 1100px) {
+    body{
+        font: bold 14px 'Walkway Bold';
+    }
+    h2{font-size: 25px;}
+
+    /* mostramos #nav-mobile */
+    #nav-mobilex{ display: block; }
+
+    /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo  */
+    #menux{
+        width: 100%;
+        float: none;
+        padding-top: 60px;
+
+    }
+    /* Convertimos nuestra lista de enlaces en un menú horizontal */
+    #menux ul{
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+        -moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+        box-shadow: 0 1px 2px rgba(0,0,0,.5);
+        max-height: 0;
+        overflow: hidden;
+    }
+    /* estilos para los LI del menu */
+    #menux li{
+        background: #33363b;
+        border-bottom: 1px solid #282b30;
+        float: none;
+    }
+
+    /* Quitamos el borde del ultimo item del menú */
+    #menux li:last-child{ border-bottom: 0;}
+    #menux li a{
+        padding: 15px 0;
+        height: auto;
+        line-height: normal;
+    }
+    #menux li a:hover{background:#2a2d33}
+
+    /* Agregamos una animación al despligue del menú */
+    #menux ul.open-menu{
+        max-height: 400px;
+        -webkit-transition: max-height .4s;
+        -moz-transition: max-height .4s;
+        -ms-transition: max-height .4s;
+        -o-transition: max-height .4s;
+        transition: max-height .4s;
+    }
+    /******************************************/
+
+    .uno2 {
+        position: absolute;
+        left: 10px;
+        top: 110px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .dos2 {
+        position: absolute;
+        left: 10px;
+        top: 170px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .tres2 {
+        position: absolute;
+        left: 10px;
+        top: 240px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .cuatro2 {
+        position: absolute;
+        left: 10px;
+        top: 305px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .cinco2 {
+        position: absolute;
+        left: 10px;
+        top: 370px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .seis2 {
+        position: absolute;
+        left: 100px;
+        top: 105px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .siete2 {
+        position: absolute;
+        left: 100px;
+        top: 165px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .ocho2 {
+        position: absolute;
+        left: 100px;
+        top: 240px;
+        width:60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .nueve2 {
+        position: absolute;
+        left: 100px;
+        top: 300px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .diez2 {
+        position: absolute;
+        left: 100px;
+        top: 365px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    /*******************************/
+
+
+    .uno {
+        position: absolute;
+        left: 10px;
+        top: 110px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .dos {
+        position: absolute;
+        left: 10px;
+        top: 170px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .tres {
+        position: absolute;
+        left: 10px;
+        top: 240px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .cuatro {
+        position: absolute;
+        left: 10px;
+        top: 305px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .cinco {
+        position: absolute;
+        left: 10px;
+        top: 370px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .seis {
+        position: absolute;
+        left: 100px;
+        top: 105px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .siete {
+        position: absolute;
+        left: 100px;
+        top: 165px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .ocho {
+        position: absolute;
+        left: 100px;
+        top: 240px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .nueve {
+        position: absolute;
+        left: 100px;
+        top: 300px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .diez {
+        position: absolute;
+        left: 100px;
+        top: 365px;
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    /*estilos para fracciones propias e impropias y equivalentes*/
+    .numerador {
+        background-color: #cef4e2;
+        color: #fff;
+        position: relative;
+        top: 10px;
+        left: 170px;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        line-height: 200px;
+        font-family: arial;
+        font-size: 15px;
+    }
+    .signo {
+        top: -150px;
+        left: 290px;
+        width: 95px;
+        height: 95px;
+        line-height: 70px;
+    }
+    .raya{
+        background-color: #000;
+        color: #fff;
+        position: relative;
+        top: 30px;
+        left: 170px;
+        z-index: 1;
+        width: 100px;
+        height: 10px;
+        line-height: 100px;
+        text-align: center;
+    }
+    .denominador {
+        background-color:  #cef4e2;
+        color: #fff;
+        position: relative;
+        top: 50px;
+        left: 170px;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        line-height: 200px;
+        font-family: arial;
+        font-size: 15px;
+    }
+    .numeradoruno {
+        top: -315px;
+        left: 412px;
+        width: 100px;
+        height: 100px;
+        line-height: 50px;
+    }
+    .raya2{
+        top: -295px;
+        left: 412px;
+        z-index: 1;
+        width: 100px;
+        height: 10px;
+    }
+    .denominadordos {
+        top: -275px;
+        left: 412px;
+        width: 100px;
+        height: 100px;
+        line-height: 50px;
+    }
+    .resultado {
+        position: absolute;
+        top: 121px;
+        left: 615px;
+        width: 100px;
+        height: 220px;
+        display: none;
+        line-height: 150px;
+
+    }
+    .num{
+        top: 120px;
+        left: 725px;
+        width: 100px;
+        height: 100px;
+        display: none;
+        line-height: 50px;
+    }
+    .raya3{
+        top: -444px;
+        left: 715px;
+        z-index: 1;
+        width: 100px;
+        height: 10px;
+        display: none;
+    }
+    .den{
+        top: 241px;
+        left: 725px;
+        width: 100px;
+        height: 100px;
+        display: none;
+        line-height: 50px
+    }
+    .texto{
+        font-family: 'Walkway Bold';
+        font-size: 3em;
+        top: 338px;
+        left: 613px;
+        position: absolute;
+        font-size: 20px
+    }
+}
