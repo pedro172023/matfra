@@ -1,0 +1,70 @@
+.primero{
+  display:inline-block;
+  width:200px;
+  height:200px;
+  text-align:center;
+  border-radius:100%;
+  background-image: url(../ico/Nivel1.svg);
+  background-repeat:no-repeat;
+
+}
+.primero:hover{
+  display:inline-block;
+  width:200px;
+  height:200px;
+  text-align:center;
+  border-radius:100%;
+  background-image: url(../ico/sombra.svg);
+  background-repeat:no-repeat;
+}
+.segundo{
+  display:inline-block;
+  width:200px;
+  height:200px;
+  text-align:center;
+  border-radius:100%;
+  background-image: url(../ico/Nivel2.svg);
+  background-repeat:no-repeat;
+
+}
+.segundo:hover{
+  display:inline-block;
+  width:200px;
+  height:200px;
+  text-align:center;
+  border-radius:100%;
+  background-image: url(../ico/sombra.svg);
+  background-repeat:no-repeat;
+}
+
+.tercero{
+  display:inline-block;
+  width:200px;
+  height:200px;
+  text-align:center;
+  border-radius:100%;
+  background-image: url(../ico/Nivel3.svg);
+  background-repeat:no-repeat;
+
+}
+.tercero:hover{
+  display:inline-block;
+  width:200px;
+  height:200px;
+  text-align:center;
+  border-radius:100%;
+  background-image: url(../ico/sombra.svg);
+  background-repeat:no-repeat;
+}
+
+.acerca{
+  display:inline-block;
+  width:100px;
+  height:100px;
+  text-align:center;
+  border-radius:100%;
+  background-image: url(../ico/acerca.svg);
+  background-repeat:no-repeat;
+  margin-left: 90%;
+
+}
