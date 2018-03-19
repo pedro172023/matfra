@@ -922,8 +922,8 @@
 		left: 0;
 		width: 375px;
 		height: 100%;
-		color: #fff;
-		color: #f00;
+		border-top-right-radius: 50px;
+		border-bottom-right-radius:50px:
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);
 		text-align: right;
 		font-weight: 900;
@@ -1134,7 +1134,7 @@
 		{
 			background-color: #e8edec;
 		}
-		
+
 
 .btn {
   background: #3498db;
