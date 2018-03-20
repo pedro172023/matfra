@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.grado1{
+  display:inline-block;
+  width:150px;
+  height:150px;
+  text-align:center;
+  border-radius:100%;
+  background-image: url(../ico/grado1.svg);
+  background-repeat:no-repeat;
+
+}
+.grado1:hover{
+  display:inline-block;
+  width:150px;
+  height:150px;
+  text-align:center;
+  border-radius:100%;
+  background-image: url(../ico/sombra.svg);
+  background-repeat:no-repeat;
+}
+
+.boton {
+background-image: url(../ico/grado1.svg);
+
+}
+
+body {
+background-image: url(../ico/fondogrados.svg);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+
+@media only screen and (max-width: 100%) {
+body {
+background-image: url(../ico/fondogrados.svg);
+}
